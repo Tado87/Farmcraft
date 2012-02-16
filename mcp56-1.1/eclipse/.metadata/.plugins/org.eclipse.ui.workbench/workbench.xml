@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="38" version="2.0">
 <workbenchAdvisor/>
 <window height="1035" maximized="true" width="1235" x="410" y="120">
 <fastViewData fastViewLocation="1024"/>
@@ -32,13 +32,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Block.java" partName="Block.java" path="C:/Users/CARDON/Desktop/Modding FarmCraft/mcp56-1.1/src/minecraft/net/minecraft/src/Block.java" title="Block.java" tooltip="Client/src/net/minecraft/src/Block.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Block.java" partName="Block.java" path="C:/Users/CARDON/Desktop/Modding FarmCraft/mcp56-1.1/src/minecraft/net/minecraft/src/Block.java" title="Block.java" tooltip="Client/src/net/minecraft/src/Block.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Block.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="42252" selectionTopPixel="13189"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="36316" selectionTopPixel="1994"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CraftItemStackTest.java" partName="CraftItemStackTest.java" path="C:/Users/CARDON/Desktop/Modding FarmCraft/CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java" title="CraftItemStackTest.java" tooltip="CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -208,7 +213,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.22644928" ratioLeft="375" ratioRight="1281" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.28706127" ratioLeft="548" ratioRight="1361" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6469957" ratioLeft="603" ratioRight="329" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -283,10 +288,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/GuiMainMenu.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/CraftingManager.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/Block.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java"/>
 </editors>
-<item historyLabel="Material.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
 <item historyLabel="Block.java" index="1">
 <position info="not_deleted" x="15220" y="4"/>
 </item>
@@ -429,7 +432,10 @@
 <item historyLabel="CraftingManager.java" index="21">
 <position info="not_deleted" x="890" y="0"/>
 </item>
-<item active="true" historyLabel="Block.java" index="22">
+<item historyLabel="Block.java" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="CraftItemStackTest.java" index="23">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -450,6 +456,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CraftItemStackTest.java" tooltip="CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java">
+<persistable path="/CraftBukkit/src/test/java/org/bukkit/craftbukkit/inventory/CraftItemStackTest.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Block.java" tooltip="Client/src/net/minecraft/src/Block.java">
 <persistable path="/Client/src/net/minecraft/src/Block.java"/>
 </file>
@@ -491,9 +500,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockSnow.java" tooltip="Client/src/net/minecraft/src/BlockSnow.java">
 <persistable path="/Client/src/net/minecraft/src/BlockSnow.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockFoin.java" tooltip="Client/src/net/minecraft/src/BlockFoin.java">
-<persistable path="/Client/src/net/minecraft/src/BlockFoin.java"/>
 </file>
 </mruList>
 </workbench>
