@@ -97,6 +97,10 @@ public class BlockFence extends Block
         {
             return true;
         }
+        if (l == blockID || l == Block.lanterne.blockID)
+        {
+            return true;
+        }
         Block block = Block.blocksList[l];
         if (block != null && block.blockMaterial.getIsOpaque() && block.renderAsNormalBlock())
         {

@@ -4165,3 +4165,29 @@ org.eclipse.jdt.core.JavaModelException: net/minecraft [in Esperia] ne se trouve
 2012-02-17 02:00:46,788 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2012-02-17 02:00:46,791 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2012-02-17 02:00:46,791 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:28:13,015 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.bukkit:craftbukkit:1.1-R1-SNAPSHOT @ C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\pom.xml.
+2012-02-17 13:28:13,032 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+2012-02-17 13:28:13,042 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+2012-02-17 13:28:14,330 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-02-17 13:28:18,439 [Worker-3] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo1.maven.org/maven2 in 4110 ms
+2012-02-17 13:28:35,611 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.bukkit:craftbukkit:1.1-R1-SNAPSHOT @ C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\pom.xml.
+2012-02-17 13:28:35,614 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+2012-02-17 13:28:35,616 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+2012-02-17 13:28:36,277 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:28:36,279 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:28:36,298 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:28:36,298 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:29:41,907 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit
+2012-02-17 13:29:41,908 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2012-02-17 13:29:53,428 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:29:53,430 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:29:53,431 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:29:53,431 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:29:54,479 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:29:54,479 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-02-17 13:29:54,480 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:29:54,480 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:30:04,915 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:30:04,915 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-02-17 13:30:04,917 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:30:04,917 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
