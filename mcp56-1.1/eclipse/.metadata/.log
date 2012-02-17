@@ -2007,3 +2007,48 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-16 22:35:07.875
 !MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.core.resources 4 1 2012-02-17 00:50:14.441
+!MESSAGE Des erreurs se sont produites lors de l'actualisation des modifications locales
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2012-02-17 00:50:14.441
+!MESSAGE Des erreurs se sont produites lors de l'actualisation des modifications locales
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Erreurs lors de l'actualisation des ressources avec le système de fichiers local.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:923)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:904)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1657)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Le fichier de description de projet (.project) pour 'CraftBukkit' est manquant.  Ce fichier contient des informations importantes sur le projet.  Le projet ne fonctionnera pas correctement tant que ce fichier n'aura pas été restauré.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2012-02-17 00:50:14.775
+!MESSAGE Erreurs lors de l'actualisation des ressources avec le système de fichiers local.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2012-02-17 00:50:14.775
+!MESSAGE Le fichier de description de projet (.project) pour 'CraftBukkit' est manquant.  Ce fichier contient des informations importantes sur le projet.  Le projet ne fonctionnera pas correctement tant que ce fichier n'aura pas été restauré.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 00:50:23.597
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 00:50:23.602
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.ui.ide 4 4 2012-02-17 00:50:59.176
+!MESSAGE Erreur lors de la sauvegarde de l'espace de travail
+
+!ENTRY org.eclipse.ui.ide 2 1 2012-02-17 00:50:59.177
+!MESSAGE Erreur lors de la sauvegarde de l'état de l'espace de travail.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2012-02-17 00:50:59.177
+!MESSAGE Le fichier de description de projet (.project) pour 'CraftBukkit' était manquant.  Ce fichier contient des informations importantes sur le projet.  Un nouveau fichier de description de projet a été créé, mais certaines informations sur le projet ont peut-être été perdues.
+!SESSION 2012-02-17 00:52:04.754 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 00:52:39.385
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 00:52:39.392
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
