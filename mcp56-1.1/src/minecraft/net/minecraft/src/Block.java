@@ -153,7 +153,7 @@ public class Block
     public static final Block lanterne;
     public static final Block Foin;
     
-    // Fin des Nouveau Block
+    // Fin des Block
     public int blockIndexInTexture;
     public final int blockID;
     protected float blockHardness;
