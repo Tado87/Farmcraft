@@ -171,6 +171,7 @@ public class Block
     public final Material blockMaterial;
     public float slipperiness;
     private String blockName;
+    // hop
 
     protected Block(int i, Material material)
     {
