@@ -145,15 +145,6 @@ public class Block
     public static final Block endPortalFrame;
     public static final Block whiteStone;
     public static final Block dragonEgg;
-    // Nouveau Block
-    public static final Block BlockSpeedy;
-    public static final Block stairsSpeedy;
-    public static final Block blockRedstone;
-    public static final Block BlockJumpBlock;
-    public static final Block lanterne;
-    public static final Block Foin;
-    
-    // Fin des Nouveau Block
     public int blockIndexInTexture;
     public final int blockID;
     protected float blockHardness;
@@ -171,6 +162,17 @@ public class Block
     public final Material blockMaterial;
     public float slipperiness;
     private String blockName;
+    
+
+    // Nouveau Block
+    public static Block BlockSpeedy;
+    public static Block stairsSpeedy;
+    public static Block blockRedstone;
+    public static Block BlockJumpBlock;
+    public static Block lanterne;
+    public static Block Foin;
+    public static BlockDispenserInfinie dispenserInfinie;
+    public static BlockLoaf loaf;
 
     protected Block(int i, Material material)
     {
@@ -937,17 +939,16 @@ public class Block
         endPortalFrame = (new BlockEndPortalFrame(120)).setStepSound(soundGlassFootstep).setLightValue(0.125F).setHardness(-1F).setBlockName("endPortalFrame").setRequiresSelfNotify().setResistance(6000000F);
         whiteStone = (new Block(121, 175, Material.rock)).setHardness(3F).setResistance(15F).setStepSound(soundStoneFootstep).setBlockName("whiteStone");
         dragonEgg = (new BlockDragonEgg(122, 167)).setHardness(3F).setResistance(15F).setStepSound(soundStoneFootstep).setLightValue(0.125F).setBlockName("dragonEgg");
-        
-        // Nouveaux Block
-        
-        BlockSpeedy = (new BlockSpeedy(138, 211)).setHardness(0.5F).setStepSound(soundStoneFootstep).setLightValue(1.0F).setBlockName("BlockSpeedy");
-        stairsSpeedy = (new BlockStairsSpeedy(139, BlockSpeedy)).setBlockName("stairsSpeedy").setRequiresSelfNotify();
         blockRedstone = (new Block(140, 212, Material.rock)).setHardness(3F).setResistance(5F).setStepSound(soundStoneFootstep).setBlockName("blockRedstone");
         BlockJumpBlock = (new BlockJumpBlock(141, 213)).setHardness(0.5F).setStepSound(soundStoneFootstep).setLightValue(1.0F).setBlockName("BlockJumpBlock");
         lanterne = (new BlockLanterne(142, 214, Material.glass)).setHardness(0.3F).setStepSound(soundGlassFootstep).setLightValue(1.0F).setBlockName("lanterne");
-        Foin = (new Block(143, 215, Material.wood)).setHardness(2.0F).setResistance(5F).setStepSound(soundGrassFootstep).setBlockName("Foin");
         
-        // Fin des Nouveaux Block        
+        BlockSpeedy = new BlockSpeedy(138);
+        dispenserInfinie = (new BlockDispenserInfinie(144));
+        loaf = (new BlockLoaf(145));
+        
+        
+        
         
         Item.itemsList[cloth.blockID] = (new ItemCloth(cloth.blockID - 256)).setItemName("cloth");
         Item.itemsList[wood.blockID] = (new ItemMetadata(wood.blockID - 256, wood)).setItemName("log");

@@ -308,7 +308,7 @@ public class GuiMainMenu extends GuiScreen
         GL11.glScalef(f1, f1, f1);
         drawCenteredString(fontRenderer, splashText, 0, -8, 0xffff00);
         GL11.glPopMatrix();
-        drawString(fontRenderer, "Minecraft 1.1- FarmCraft 1.0" , 2, height - 10, 0xffffff);
+        drawString(fontRenderer, "Minecraft 1.1- FarmCraft 0.2" , 2, height - 10, 0xffffff);
         String s = "Copyright Mojang AB. Do not distribute!";
         drawString(fontRenderer, s, width - fontRenderer.getStringWidth(s) - 2, height - 10, 0xffffff);
         super.drawScreen(i, j, f);

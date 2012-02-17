@@ -211,29 +211,9 @@ public class RenderBlocks
         {
             return renderStandardBlock(block, i, j, k);
         }
-        if (l == 4)
-        {
-            return renderBlockFluids(block, i, j, k);
-        }
-        if (l == 13)
-        {
-            return renderBlockCactus(block, i, j, k);
-        }
         if (l == 1)
         {
             return renderCrossedSquares(block, i, j, k);
-        }
-        if (l == 19)
-        {
-            return renderBlockStem(block, i, j, k);
-        }
-        if (l == 23)
-        {
-            return renderBlockLilyPad(block, i, j, k);
-        }
-        if (l == 6)
-        {
-            return renderBlockCrops(block, i, j, k);
         }
         if (l == 2)
         {
@@ -243,17 +223,25 @@ public class RenderBlocks
         {
             return renderBlockFire(block, i, j, k);
         }
+        if (l == 4)
+        {
+            return renderBlockFluids(block, i, j, k);
+        }
         if (l == 5)
         {
             return renderBlockRedstoneWire(block, i, j, k);
         }
-        if (l == 8)
+        if (l == 6)
         {
-            return renderBlockLadder(block, i, j, k);
+            return renderBlockCrops(block, i, j, k);
         }
         if (l == 7)
         {
             return renderBlockDoor(block, i, j, k);
+        }
+        if (l == 8)
+        {
+            return renderBlockLadder(block, i, j, k);
         }
         if (l == 9)
         {
@@ -263,10 +251,6 @@ public class RenderBlocks
         {
             return renderBlockStairs(block, i, j, k);
         }
-        if (l == 27)
-        {
-            return renderBlockDragonEgg((BlockDragonEgg)block, i, j, k);
-        }
         if (l == 11)
         {
             return renderBlockFence((BlockFence)block, i, j, k);
@@ -274,6 +258,10 @@ public class RenderBlocks
         if (l == 12)
         {
             return renderBlockLever(block, i, j, k);
+        }
+        if (l == 13)
+        {
+            return renderBlockCactus(block, i, j, k);
         }
         if (l == 14)
         {
@@ -295,6 +283,10 @@ public class RenderBlocks
         {
             return renderBlockPane((BlockPane)block, i, j, k);
         }
+        if (l == 19)
+        {
+            return renderBlockStem(block, i, j, k);
+        }
         if (l == 20)
         {
             return renderBlockVine(block, i, j, k);
@@ -302,6 +294,10 @@ public class RenderBlocks
         if (l == 21)
         {
             return renderBlockFenceGate((BlockFenceGate)block, i, j, k);
+        }
+        if (l == 23)
+        {
+            return renderBlockLilyPad(block, i, j, k);
         }
         if (l == 24)
         {
@@ -315,6 +311,11 @@ public class RenderBlocks
         {
             return renderBlockEndPortalFrame(block, i, j, k);
         }
+        if (l == 27)
+        {
+            return renderBlockDragonEgg((BlockDragonEgg)block, i, j, k);
+        }
+        if (l == 28) return renderBlockSlope((BlockSpeedy) block, i, j, k);
         else
         {
             return false;
@@ -4311,8 +4312,51 @@ public class RenderBlocks
             renderStandardBlock(block, i, j, k);
             flag = true;
         }
-        block.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
         return flag;
+    }
+
+    public boolean renderBlockSlope(BlockSpeedy block, int i, int j, int k)
+    {
+        int l = blockAccess.getBlockMetadata(i, j, k);
+        if (l == 0) {
+        	
+            if (block.isSpeedyAt(blockAccess, i, j -1, k +1)) {
+            	for( float m=0.0F ; m < 1 ; m += 0.1F ) {
+                    block.setBlockBounds(0.0F, m, 0.0F, 1.0F, m+0.1F, 1.0F-m);
+                    renderStandardBlock(block, i, j, k);
+            	}
+            } else if (block.isSpeedyAt(blockAccess, i, j -1, k -1)) {
+            	for( float m=0.0F ; m < 1 ; m += 0.1F ) {
+                    block.setBlockBounds(0.0F, 0.0F, m, 1.0F, m+0.1F, 1.0F);
+                    renderStandardBlock(block, i, j, k);
+            	}
+            } else {
+                block.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+                renderStandardBlock(block, i, j, k);
+            }
+        	
+        } else if (l == 1) {
+
+            if (block.isSpeedyAt(blockAccess, i +1, j -1, k)) {
+            	for( float m=0.0F ; m < 1 ; m += 0.1F ) {
+                    block.setBlockBounds(0.0F, m, 0.0F, 1.0F-m, m+0.1F, 1.0F);
+                    renderStandardBlock(block, i, j, k);
+            	}
+            } else if (block.isSpeedyAt(blockAccess, i -1, j -1, k)) {
+            	for( float m=0.0F ; m < 1 ; m += 0.1F ) {
+                    block.setBlockBounds(m, 0.0F, 0.0F, 1.0F, m+0.1F, 1.0F);
+                    renderStandardBlock(block, i, j, k);
+            	}
+            } else {
+                block.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+                renderStandardBlock(block, i, j, k);
+            }
+
+            block.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
+            
+        }
+
+        return true;
     }
 
     public boolean renderBlockDoor(Block block, int i, int j, int k)

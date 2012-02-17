@@ -26,6 +26,8 @@ public class BlockRedstoneOre extends Block
         glow(world, i, j, k);
         super.onBlockClicked(world, i, j, k, entityplayer);
     }
+    
+    private int speed = 10;
 
     public void onEntityWalking(World world, int i, int j, int k, Entity entity)
     {

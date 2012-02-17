@@ -20,6 +20,10 @@ public class BlockMelon extends Block
         return i != 1 && i != 0 ? 136 : 137;
     }
 
+    public int getRenderType() {
+        return 1;
+    }
+
     public int idDropped(int i, Random random, int j)
     {
         return Item.melon.shiftedIndex;
