@@ -4191,3 +4191,38 @@ org.eclipse.jdt.core.JavaModelException: net/minecraft [in Esperia] ne se trouve
 2012-02-17 13:30:04,915 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2012-02-17 13:30:04,917 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2012-02-17 13:30:04,917 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:36:16,431 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:36:16,434 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:36:16,435 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:36:16,435 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:36:28,044 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:36:28,045 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:36:28,047 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:36:28,047 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:37:39,168 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:37:39,169 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:37:39,170 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:37:39,170 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:37:59,485 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-02-17 13:38:04,269 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit
+2012-02-17 13:38:04,269 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2012-02-17 13:38:10,574 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:10,575 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:38:10,577 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:10,577 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:38:11,637 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:11,638 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:38:11,639 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:11,639 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:38:14,437 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:14,438 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-02-17 13:38:14,439 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:14,440 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:38:15,534 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:15,534 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-02-17 13:38:15,535 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:15,535 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
+2012-02-17 13:38:22,629 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:22,630 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-02-17 13:38:22,632 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-02-17 13:38:22,632 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CARDON\Desktop\Modding FarmCraft\CraftBukkit\src\test\resources
