@@ -11,7 +11,7 @@ class ContainerCreative extends Container
         itemList = new ArrayList();
         Block ablock[] =
         {
-            Block.cobblestone, Block.stone, Block.oreDiamond, Block.oreGold, Block.oreIron, Block.oreCoal, Block.oreLapis, Block.oreRedstone, Block.stoneBrick, Block.stoneBrick,
+            Block.cobblestone, Block.BlockSpeedy, Block.stairsSpeedy, Block.stone, Block.oreDiamond, Block.oreGold, Block.oreIron, Block.oreCoal, Block.oreLapis, Block.oreRedstone, Block.stoneBrick, Block.stoneBrick,
             Block.stoneBrick, Block.blockClay, Block.blockDiamond, Block.blockGold, Block.blockSteel, Block.bedrock, Block.blockLapis, Block.brick, Block.cobblestoneMossy, Block.stairSingle,
             Block.stairSingle, Block.stairSingle, Block.stairSingle, Block.stairSingle, Block.stairSingle, Block.obsidian, Block.netherrack, Block.slowSand, Block.glowStone, Block.wood,
             Block.wood, Block.wood, Block.leaves, Block.leaves, Block.leaves, Block.dirt, Block.grass, Block.sand, Block.sandStone, Block.gravel,
@@ -22,7 +22,7 @@ class ContainerCreative extends Container
             Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.dispenser,
             Block.stoneOvenIdle, Block.music, Block.jukebox, Block.pistonStickyBase, Block.pistonBase, Block.fence, Block.fenceGate, Block.ladder, Block.rail, Block.railPowered,
             Block.railDetector, Block.torchWood, Block.stairCompactPlanks, Block.stairCompactCobblestone, Block.stairsBrick, Block.stairsStoneBrickSmooth, Block.lever, Block.pressurePlateStone, Block.pressurePlatePlanks, Block.torchRedstoneActive,
-            Block.button, Block.trapdoor, Block.enchantmentTable, Block.blockRedstone, Block.BlockJumpBlock, Block.lanterne, Block.BlockSpeedy, Block.dispenserInfinie, Block.loaf
+            Block.button, Block.trapdoor, Block.enchantmentTable, Block.blockRedstone, Block.BlockJumpBlock, Block.lanterne, Block.Foin,
         };
         int i = 0;
         int j = 0;

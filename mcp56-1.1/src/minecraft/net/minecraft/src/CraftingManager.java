@@ -27,6 +27,22 @@ public class CraftingManager
                 {
                     "###", Character.valueOf('#'), Item.reed
                 });
+        //Block Lanterne
+        addRecipe(new ItemStack(Block.lanterne, 1), new Object[]
+                {
+                    "###", "#X#", "###", Character.valueOf('#'), Item.stick, Character.valueOf('X'), Block.glowStone
+                });
+        //Fin Block Lanterne
+        //Block Foin
+        addRecipe(new ItemStack(Block.Foin, 1), new Object[]
+                {
+                    "XXX", "XXX", "XXX", Character.valueOf('X'), Item.wheat
+                });
+        addRecipe(new ItemStack(Item.wheat, 9), new Object[]
+                {
+                    "X", Character.valueOf('X'), Block.Foin
+                });
+        //Fin Block Foin
         addRecipe(new ItemStack(Item.book, 1), new Object[]
                 {
                     "#", "#", "#", Character.valueOf('#'), Item.paper
@@ -309,14 +325,6 @@ public class CraftingManager
                 {
                     Item.enderPearl, Item.blazePowder
                 });
-
-        
-        addRecipe(new ItemStack(Block.loaf, 1), new Object[]
-                {
-                    "###", Character.valueOf('#'), Item.seeds
-                });
-        
-        
         Collections.sort(recipes, new RecipeSorter(this));
         System.out.println((new StringBuilder()).append(recipes.size()).append(" recipes").toString());
     }

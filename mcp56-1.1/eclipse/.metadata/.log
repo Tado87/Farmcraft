@@ -2052,3 +2052,63 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 00:52:39.392
 !MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+!SESSION 2012-02-17 01:54:17.257 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 01:54:57.479
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 01:54:57.515
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 01:55:21.730
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 01:55:21.732
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+!SESSION 2012-02-17 01:55:35.184 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -data C:\Users\CARDON\Desktop\Modding FarmCraft\mcp56-1.1\eclipse -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.126
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_no_50jre_title in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.131
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_no_50jre_message in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.132
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_project_compliance_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.132
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_workspace_compliance_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.133
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_compliance_changeworkspace_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.133
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_compliance_changeproject_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2012-02-17 01:56:23.134
+!MESSAGE NLS unused message: LocalCorrectionsSubProcessor_surroundwith_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+!SESSION 2012-02-17 01:59:35.341 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 02:00:23.509
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-02-17 02:00:23.519
+!MESSAGE The metadata C:\Users\CARDON\.m2\repository\org\bukkit\bukkit\1.1-R1-SNAPSHOT\maven-metadata-bukkit-repo.xml is invalid: entity reference names can not start with character '&' (position: START_TAG seen ...agName(\'base\')[0], _bH = "http://forums.bukkit.org/";\n\t\t\tif (_b &&... @10:13) 
