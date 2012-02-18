@@ -5,8 +5,8 @@ import java.util.Random;
 public class TileEntityDispenser extends TileEntity
     implements IInventory
 {
-    private ItemStack dispenserContents[];
-    private Random dispenserRandom;
+    ItemStack dispenserContents[];
+    Random dispenserRandom;
 
     public TileEntityDispenser()
     {

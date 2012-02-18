@@ -2,21 +2,22 @@ package net.minecraft.src;
 
 import java.util.Random;
 
-public class BlockDispenserInfinie extends BlockContainer {
-	
+public class BlockInfiniteDispenser extends BlockContainer {
+
     private Random random;
 
-    protected BlockDispenserInfinie(int i) {
+    protected BlockInfiniteDispenser(int i) {
         super(i, Material.rock);
         random = new Random();
         blockIndexInTexture = 45;
         
         setHardness(3.5F);
         setStepSound(soundStoneFootstep);
-        setBlockName("dispenserInfinie");
+        setBlockName("Infinite Dispenser");
         setRequiresSelfNotify();
         setBlockUnbreakable();
         setResistance(6000000F);
+        
     }
 
     public int getRenderColor(int i) {
@@ -140,12 +141,12 @@ public class BlockDispenserInfinie extends BlockContainer {
         
         TileEntityDispenser tileentitydispenser = (TileEntityDispenser)world.getBlockTileEntity(i, j, k);
         if (tileentitydispenser != null) {
-        	
-        	int a = -1;
+        
+         int a = -1;
             int b = 1;
             for (int c = 0; c < tileentitydispenser.dispenserContents.length; c++)
                 if (tileentitydispenser.dispenserContents[c] != null && tileentitydispenser.dispenserRandom.nextInt(b++) == 0)
-                	a = c;
+                 a = c;
             
             ItemStack itemstack = null;
             
@@ -156,7 +157,7 @@ public class BlockDispenserInfinie extends BlockContainer {
             double d1 = (double)j + 0.5D;
             double d2 = (double)k + (double)j1 * 0.59999999999999998D + 0.5D;
             if (itemstack == null)
-            	world.playAuxSFX(1001, i, j, k, 0);
+             world.playAuxSFX(1001, i, j, k, 0);
             else {
                 if (itemstack.itemID == Item.arrow.shiftedIndex) {
                     EntityArrow entityarrow = new EntityArrow(world, d, d1, d2);
