@@ -26,7 +26,7 @@ public class BlockLoaf extends BlockCake {
 
     private void eatLoafSlice(World world, int i, int j, int k, EntityPlayer entityplayer) {
         if (entityplayer.canEat(false)) {
-            entityplayer.getFoodStats().addStats(2, 0.2F);
+            entityplayer.getFoodStats().addStats(4, 0.1F);
             int l = world.getBlockMetadata(i, j, k) + 1;
             if (l >= 6)
                 world.setBlockWithNotify(i, j, k, 0);
