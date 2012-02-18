@@ -22,7 +22,7 @@ class ContainerCreative extends Container
             Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.cloth, Block.dispenser,
             Block.stoneOvenIdle, Block.music, Block.jukebox, Block.pistonStickyBase, Block.pistonBase, Block.fence, Block.fenceGate, Block.ladder, Block.rail, Block.railPowered,
             Block.railDetector, Block.torchWood, Block.stairCompactPlanks, Block.stairCompactCobblestone, Block.stairsBrick, Block.stairsStoneBrickSmooth, Block.lever, Block.pressurePlateStone, Block.pressurePlatePlanks, Block.torchRedstoneActive,
-            Block.button, Block.trapdoor, Block.enchantmentTable, Block.blockRedstone, Block.BlockJumpBlock, Block.lanterne, Block.Foin,
+            Block.button, Block.trapdoor, Block.enchantmentTable, Block.blockRedstone, Block.BlockJumpBlock, Block.lanterne, Block.Foin, Block.loaf
         };
         int i = 0;
         int j = 0;

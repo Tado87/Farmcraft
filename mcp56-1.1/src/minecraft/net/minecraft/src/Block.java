@@ -145,15 +145,6 @@ public class Block
     public static final Block endPortalFrame;
     public static final Block whiteStone;
     public static final Block dragonEgg;
-    // Nouveau Block
-    public static final Block BlockSpeedy;
-    public static final Block stairsSpeedy;
-    public static final Block blockRedstone;
-    public static final Block BlockJumpBlock;
-    public static final Block lanterne;
-    public static final Block Foin;
-    
-    // Fin des Block
     public int blockIndexInTexture;
     public final int blockID;
     protected float blockHardness;
@@ -171,7 +162,17 @@ public class Block
     public final Material blockMaterial;
     public float slipperiness;
     private String blockName;
-    // hop
+    
+    
+    // Nouveau Block
+    public static Block BlockSpeedy;
+    public static Block stairsSpeedy;
+    public static Block blockRedstone;
+    public static Block BlockJumpBlock;
+    public static Block lanterne;
+    public static Block Foin;
+	public static Block loaf;
+    // Fin des Block
 
     protected Block(int i, Material material)
     {
@@ -947,6 +948,7 @@ public class Block
         BlockJumpBlock = (new BlockJumpBlock(141, 213)).setHardness(0.5F).setStepSound(soundStoneFootstep).setLightValue(1.0F).setBlockName("BlockJumpBlock");
         lanterne = (new BlockLanterne(142, 214, Material.glass)).setHardness(0.3F).setStepSound(soundGlassFootstep).setLightValue(1.0F).setBlockName("lanterne");
         Foin = (new Block(143, 215, Material.wood)).setHardness(2.0F).setResistance(5F).setStepSound(soundGrassFootstep).setBlockName("Foin");
+        loaf = (new BlockLoaf(145));
         
         // Fin des Nouveaux Block        
         

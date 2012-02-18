@@ -43,6 +43,12 @@ public class CraftingManager
                     "X", Character.valueOf('X'), Block.Foin
                 });
         //Fin Block Foin
+        //Block Loaf
+        addRecipe(new ItemStack(Block.loaf, 1), new Object[]
+                {
+                    "###", "#X#", "###", Character.valueOf('#'), Item.wheat, Character.valueOf('X'), Item.bucketMilk
+                });
+        //Fin Block Loaf
         addRecipe(new ItemStack(Item.book, 1), new Object[]
                 {
                     "#", "#", "#", Character.valueOf('#'), Item.paper
