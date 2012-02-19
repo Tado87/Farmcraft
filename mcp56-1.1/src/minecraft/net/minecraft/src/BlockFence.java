@@ -23,26 +23,26 @@ public class BlockFence extends Block
         boolean flag1 = isFenceAt(world, i, j, k + 1);
         boolean flag2 = isFenceAt(world, i - 1, j, k);
         boolean flag3 = isFenceAt(world, i + 1, j, k);
+
+        boolean flag4 = isFenceAt(world, i - 1, j, k - 1);
+        boolean flag5 = isFenceAt(world, i + 1, j, k - 1);
+        boolean flag6 = isFenceAt(world, i - 1, j, k + 1);
+        boolean flag7 = isFenceAt(world, i + 1, j, k + 1);
+        
         float f = 0.375F;
         float f1 = 0.625F;
         float f2 = 0.375F;
         float f3 = 0.625F;
-        if (flag)
-        {
+        
+        if ( flag || flag4 || flag5 )
             f2 = 0.0F;
-        }
-        if (flag1)
-        {
+        if ( flag1 || flag6 || flag7 )
             f3 = 1.0F;
-        }
-        if (flag2)
-        {
+        if ( flag2 || flag6 || flag4 )
             f = 0.0F;
-        }
-        if (flag3)
-        {
+        if (flag3 || flag7 || flag5)
             f1 = 1.0F;
-        }
+        
         return AxisAlignedBB.getBoundingBoxFromPool((float)i + f, j, (float)k + f2, (float)i + f1, (float)j + 1.5F, (float)k + f3);
     }
 
@@ -52,26 +52,26 @@ public class BlockFence extends Block
         boolean flag1 = isFenceAt(iblockaccess, i, j, k + 1);
         boolean flag2 = isFenceAt(iblockaccess, i - 1, j, k);
         boolean flag3 = isFenceAt(iblockaccess, i + 1, j, k);
+
+        boolean flag4 = isFenceAt(iblockaccess, i - 1, j, k - 1);
+        boolean flag5 = isFenceAt(iblockaccess, i + 1, j, k - 1);
+        boolean flag6 = isFenceAt(iblockaccess, i - 1, j, k + 1);
+        boolean flag7 = isFenceAt(iblockaccess, i + 1, j, k + 1);
+        
         float f = 0.375F;
         float f1 = 0.625F;
         float f2 = 0.375F;
         float f3 = 0.625F;
-        if (flag)
-        {
+        
+        if ( flag || flag4 || flag5 )
             f2 = 0.0F;
-        }
-        if (flag1)
-        {
+        if ( flag1 || flag6 || flag7 )
             f3 = 1.0F;
-        }
-        if (flag2)
-        {
+        if ( flag2 || flag6 || flag4 )
             f = 0.0F;
-        }
-        if (flag3)
-        {
+        if (flag3 || flag7 || flag5)
             f1 = 1.0F;
-        }
+        
         setBlockBounds(f, 0.0F, f2, f1, 1.0F, f3);
     }
 

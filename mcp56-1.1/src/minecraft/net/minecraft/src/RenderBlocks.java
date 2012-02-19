@@ -642,6 +642,7 @@ public class RenderBlocks
             renderTorchAtAngle(block, i, j, k, 0.0D, 0.0D);
         }
         return true;
+        
     }
 
     private boolean renderBlockRepeater(Block block, int i, int j, int k)
@@ -2562,7 +2563,7 @@ public class RenderBlocks
         tessellator.addVertexWithUV(d10, d1 + 1.0D, d2 - d13, f, f2);
         tessellator.addVertexWithUV(d10 + d3, d1 + 0.0D, (d2 - d13) + d4, f, f3);
         tessellator.addVertexWithUV(d9 + d3, d1 + 0.0D, (d2 - d13) + d4, f1, f3);
-        tessellator.addVertexWithUV(d9, d1 + 1.0D, d2 - d13, f1, f2);
+        tessellator.addVertexWithUV(d9, d1 + 1.0D, d2 - d13, f1, f2);/**/
     }
 
     public void drawCrossedSquares(Block block, int i, double d, double d1, double d2)
@@ -4039,6 +4040,7 @@ public class RenderBlocks
         float f5 = flag4 ? 1.0F : f1;
         float f6 = flag5 ? 0.0F : f;
         float f7 = flag6 ? 1.0F : f1;
+        
         if (flag1)
         {
             blockfence.setBlockBounds(f4, f2, f, f5, f3, f1);
@@ -4065,8 +4067,118 @@ public class RenderBlocks
             renderStandardBlock(blockfence, i, j, k);
             flag = true;
         }
+        
+        
+        boolean coin1 = blockfence.isFenceAt(blockAccess, i - 1, j, k - 1);
+        boolean coin2 = blockfence.isFenceAt(blockAccess, i + 1, j, k - 1);
+        boolean coin3 = blockfence.isFenceAt(blockAccess, i - 1, j, k + 1);
+        boolean coin4 = blockfence.isFenceAt(blockAccess, i + 1, j, k + 1);
+        
+        if( coin1 || coin2 || coin3 || coin4 ) {
+
+            if( coin1 && !flag3 && !flag5 ) {
+            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 1);
+            	renderBlockFenceDiag(blockfence, i, j + 0.5625F, k, 1);
+            }
+            
+            if( coin2 && !flag4 && !flag5) {
+            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 2);
+            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 2);
+            }
+            
+            if( coin3 && !flag3 && !flag6) {
+            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 3);
+            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 3);
+            }
+            
+            if( coin4 && !flag4 && !flag6 ) {
+            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 4);
+            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 4);
+            }
+	    	
+	    }
+        
         blockfence.setBlockBoundsBasedOnState(blockAccess, i, j, k);
         return flag;
+    }
+    
+    public void renderBlockFenceDiag(BlockFence blockfence, int i, float j, int k, int plus) {
+    	
+        Tessellator tessellator = Tessellator.instance;
+        int b = blockfence.getBlockTextureFromSide(0);
+        if (overrideBlockTexture >= 0) b = overrideBlockTexture;
+        int c = (b & 0xf) << 4;
+        int d = b & 0xf0;
+        float ft = ((float)c + 2) / 256F;
+        float ft1 = ((float)c + 12F) / 256F;
+        float ft2 = ((float)d + 2) / 256F;
+        float ft3 = ((float)d + 10F) / 256F;
+
+        float jh1 = j, jb1 = j - .1875F;
+        double la = .05, i1 = 0, k1 = 0, i2 = 0, k2 = 0, i3 = 0, k3 = 0, i4 = 0, k4 = 0;
+        
+        if( plus == 1 ) {
+            i1 = i + la;
+            k1 = k - la;
+            i2 = i - la;
+            k2 = k + la;
+            i3 = i + la + .5;
+            k3 = k - la + .5; 
+            i4 = i - la + .5;
+            k4 = k + la + .5;
+        } if( plus == 2 ) {
+            i2 = i - la + 1;
+            k2 = k - la;
+            i1 = i + la + 1;
+            k1 = k + la;
+            i4 = i - la + .5;
+            k4 = k - la + .5; 
+            i3 = i + la + .5;
+            k3 = k + la + .5;
+        } if( plus == 3 ) {
+            i2 = i - la + 1 - .5;
+            k2 = k - la + .5;
+            i1 = i + la + 1 - .5;
+            k1 = k + la + .5;
+            i4 = i - la + .5 - .5;
+            k4 = k - la + .5 + .5; 
+            i3 = i + la + .5 - .5;
+            k3 = k + la + .5 + .5;
+        } if( plus == 4 ) {
+            i1 = i + la + .5;
+            k1 = k - la + .5;
+            i2 = i - la + .5;
+            k2 = k + la + .5;
+            i3 = i + la + .5 + .5;
+            k3 = k - la + .5 + .5; 
+            i4 = i - la + .5 + .5;
+            k4 = k + la + .5 + .5;
+        }
+        
+            // dessus 1
+            tessellator.addVertexWithUV(i2, jh1, k2, ft, ft3);
+            tessellator.addVertexWithUV(i4, jh1, k4, ft, ft2);
+            tessellator.addVertexWithUV(i3, jh1, k3, ft1, ft2);
+            tessellator.addVertexWithUV(i1, jh1, k1, ft1, ft3);
+
+            // dessous 1
+            tessellator.addVertexWithUV(i4, jb1, k4, ft, ft3);
+            tessellator.addVertexWithUV(i2, jb1, k2, ft, ft2);
+            tessellator.addVertexWithUV(i1, jb1, k1, ft1, ft2);
+            tessellator.addVertexWithUV(i3, jb1, k3, ft1, ft3);
+
+            // cote1 1
+            tessellator.addVertexWithUV(i1, jh1, k1, ft, ft2);
+            tessellator.addVertexWithUV(i3, jh1, k3, ft, ft3);
+            tessellator.addVertexWithUV(i3, jb1, k3, ft1, ft3);
+            tessellator.addVertexWithUV(i1, jb1, k1, ft1, ft2);
+
+            // cote2 1
+            tessellator.addVertexWithUV(i4, jh1, k4, ft, ft3);
+            tessellator.addVertexWithUV(i2, jh1, k2, ft, ft2);
+            tessellator.addVertexWithUV(i2, jb1, k2, ft1, ft2);
+            tessellator.addVertexWithUV(i4, jb1, k4, ft1, ft3);
+        
     }
 
     public boolean renderBlockDragonEgg(BlockDragonEgg blockdragonegg, int i, int j, int k)
