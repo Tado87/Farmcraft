@@ -900,7 +900,6 @@ public class Block
         blockClay = (new BlockClay(82, 72)).setHardness(0.6F).setStepSound(soundGravelFootstep).setBlockName("clay");
         reed = (new BlockReed(83, 73)).setHardness(0.0F).setStepSound(soundGrassFootstep).setBlockName("reeds").disableStats();
         jukebox = (new BlockJukeBox(84, 74)).setHardness(2.0F).setResistance(10F).setStepSound(soundStoneFootstep).setBlockName("jukebox").setRequiresSelfNotify();
-        fence = (new BlockFence(85, 4)).setHardness(2.0F).setResistance(5F).setStepSound(soundWoodFootstep).setBlockName("fence");
         pumpkin = (new BlockPumpkin(86, 102, false)).setHardness(1.0F).setStepSound(soundWoodFootstep).setBlockName("pumpkin").setRequiresSelfNotify();
         netherrack = (new BlockNetherrack(87, 103)).setHardness(0.4F).setStepSound(soundStoneFootstep).setBlockName("hellrock");
         slowSand = (new BlockSoulSand(88, 104)).setHardness(0.5F).setStepSound(soundSandFootstep).setBlockName("hellsand");
@@ -947,6 +946,7 @@ public class Block
         BlockJumpBlock = (new BlockJumpBlock(141, 213)).setHardness(0.5F).setStepSound(soundStoneFootstep).setLightValue(1.0F).setBlockName("BlockJumpBlock");
         lanterne = (new BlockLanterne(142, 214, Material.glass)).setHardness(0.3F).setStepSound(soundGlassFootstep).setLightValue(1.0F).setBlockName("lanterne");
         Foin = (new Block(143, 215, Material.wood)).setHardness(2.0F).setResistance(5F).setStepSound(soundGrassFootstep).setBlockName("Foin");
+        fence = (new BlockFence(85, 217)).setHardness(2.0F).setResistance(5F).setStepSound(soundWoodFootstep).setBlockName("fence");
         
         // Fin des Nouveaux Block        
         

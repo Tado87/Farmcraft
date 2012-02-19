@@ -4011,89 +4011,113 @@ public class RenderBlocks
         boolean flag = false;
         float f = 0.375F;
         float f1 = 0.625F;
-        blockfence.setBlockBounds(f, 0.0F, f, f1, 1.0F, f1);
-        renderStandardBlock(blockfence, i, j, k);
+        /*blockfence.setBlockBounds(f, 0.0F, f, f1, 1.0F, f1);
+        renderStandardBlock(blockfence, i, j, k);*/
+
+        Tessellator tessellator = Tessellator.instance;
+        int b = blockfence.getBlockTextureFromSide(0);
+        if (overrideBlockTexture >= 0) b = overrideBlockTexture;
+        int c = (b & 0xf) << 4;
+        int d = b & 0xf0;
+
+    	float ft = ((float)c + 16) / 256F;
+    	float ft1 = ((float)c + 12) / 256F;
+        float ft3 = ((float)d + 12) / 256F;
+        float ft2 = ((float)d + 16) / 256F;
+        // dessus
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.625, ft, ft3);
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.375, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.375, ft1, ft2);
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.625, ft, ft2);
+
+    	ft = ((float)c + 10) / 256F;
+    	ft1 = ((float)c + 6) / 256F;
+        ft3 = ((float)d + 12) / 256F;
+        ft2 = ((float)d + 16) / 256F;
+        // dessous
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.375, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.625, ft, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.625, ft, ft2);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.375, ft1, ft2);
+
+    	ft = ((float)c + 4) / 256F;
+    	ft1 = ((float)c + 0) / 256F;
+        ft3 = ((float)d + 0) / 256F;
+        ft2 = ((float)d + 16) / 256F;
+        // cote 1
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.625, ft, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.375, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.375, ft1, ft2);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.625, ft, ft2);
+        // cote 2
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.375, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.625, ft, ft3);
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.625, ft, ft2);
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.375, ft1, ft2);
+        // cote 3
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.625, ft1, ft2);
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.625, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.625, ft, ft3);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.625, ft, ft2);
+        // cote 3
+        tessellator.addVertexWithUV(i + 0.625, j + 1, k + 0.375, ft1, ft3);
+        tessellator.addVertexWithUV(i + 0.625, j, k + 0.375, ft1, ft2);
+        tessellator.addVertexWithUV(i + 0.375, j, k + 0.375, ft, ft2);
+        tessellator.addVertexWithUV(i + 0.375, j + 1, k + 0.375, ft, ft3);
+        
+        
         flag = true;
-        boolean flag1 = false;
-        boolean flag2 = false;
-        if (blockfence.isFenceAt(blockAccess, i - 1, j, k) || blockfence.isFenceAt(blockAccess, i + 1, j, k))
-        {
-            flag1 = true;
-        }
-        if (blockfence.isFenceAt(blockAccess, i, j, k - 1) || blockfence.isFenceAt(blockAccess, i, j, k + 1))
-        {
-            flag2 = true;
-        }
+        
         boolean flag3 = blockfence.isFenceAt(blockAccess, i - 1, j, k);
         boolean flag4 = blockfence.isFenceAt(blockAccess, i + 1, j, k);
         boolean flag5 = blockfence.isFenceAt(blockAccess, i, j, k - 1);
         boolean flag6 = blockfence.isFenceAt(blockAccess, i, j, k + 1);
-        if (!flag1 && !flag2)
-        {
-            flag1 = true;
-        }
-        f = 0.4375F;
-        f1 = 0.5625F;
-        float f2 = 0.75F;
-        float f3 = 0.9375F;
-        float f4 = flag3 ? 0.0F : f;
-        float f5 = flag4 ? 1.0F : f1;
-        float f6 = flag5 ? 0.0F : f;
-        float f7 = flag6 ? 1.0F : f1;
-        
-        if (flag1)
-        {
-            blockfence.setBlockBounds(f4, f2, f, f5, f3, f1);
-            renderStandardBlock(blockfence, i, j, k);
-            flag = true;
-        }
-        if (flag2)
-        {
-            blockfence.setBlockBounds(f, f2, f6, f1, f3, f7);
-            renderStandardBlock(blockfence, i, j, k);
-            flag = true;
-        }
-        f2 = 0.375F;
-        f3 = 0.5625F;
-        if (flag1)
-        {
-            blockfence.setBlockBounds(f4, f2, f, f5, f3, f1);
-            renderStandardBlock(blockfence, i, j, k);
-            flag = true;
-        }
-        if (flag2)
-        {
-            blockfence.setBlockBounds(f, f2, f6, f1, f3, f7);
-            renderStandardBlock(blockfence, i, j, k);
-            flag = true;
-        }
-        
         
         boolean coin1 = blockfence.isFenceAt(blockAccess, i - 1, j, k - 1);
         boolean coin2 = blockfence.isFenceAt(blockAccess, i + 1, j, k - 1);
         boolean coin3 = blockfence.isFenceAt(blockAccess, i - 1, j, k + 1);
         boolean coin4 = blockfence.isFenceAt(blockAccess, i + 1, j, k + 1);
         
-        if( coin1 || coin2 || coin3 || coin4 ) {
+        if( coin1 || coin2 || coin3 || coin4 || flag3 || flag4 || flag5 || flag6 ) {
 
             if( coin1 && !flag3 && !flag5 ) {
-            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 1);
-            	renderBlockFenceDiag(blockfence, i, j + 0.5625F, k, 1);
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 1);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 1);
             }
             
             if( coin2 && !flag4 && !flag5) {
-            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 2);
-            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 2);
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 2);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 2);
             }
             
             if( coin3 && !flag3 && !flag6) {
-            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 3);
-            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 3);
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 3);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 3);
             }
             
             if( coin4 && !flag4 && !flag6 ) {
-            	renderBlockFenceDiag(blockfence, i, j + 0.9375F, k, 4);
-            	renderBlockFenceDiag(blockfence, i, j + 0.55F, k, 4);
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 4);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 4);
+            }
+            
+            if( flag3 ) {
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 5);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 5);
+            }
+            
+            if( flag4 ) {
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 6);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 6);
+            }
+            
+            if( flag5 ) {
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 7);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 7);
+            }
+            
+            if( flag6 ) {
+            	renderBlockFenceBar(blockfence, i, j, k, 1, 8);
+            	renderBlockFenceBar(blockfence, i, j, k, 2, 8);
             }
 	    	
 	    }
@@ -4102,82 +4126,86 @@ public class RenderBlocks
         return flag;
     }
     
-    public void renderBlockFenceDiag(BlockFence blockfence, int i, float j, int k, int plus) {
+    public void renderBlockFenceBar(BlockFence blockfence, int i, float j, int k, int h, int plus) {
     	
         Tessellator tessellator = Tessellator.instance;
         int b = blockfence.getBlockTextureFromSide(0);
         if (overrideBlockTexture >= 0) b = overrideBlockTexture;
         int c = (b & 0xf) << 4;
         int d = b & 0xf0;
-        float ft = ((float)c + 2) / 256F;
-        float ft1 = ((float)c + 12F) / 256F;
-        float ft2 = ((float)d + 2) / 256F;
-        float ft3 = ((float)d + 10F) / 256F;
 
-        float jh1 = j, jb1 = j - .1875F;
+        float jh = j + 0.9375F;
+        int th = 0;
+        if (h == 2) { jh = j + 0.55F; th = 6; }
+		float jb = jh - .1875F;
+
         double la = .05, i1 = 0, k1 = 0, i2 = 0, k2 = 0, i3 = 0, k3 = 0, i4 = 0, k4 = 0;
         
         if( plus == 1 ) {
-            i1 = i + la;
-            k1 = k - la;
-            i2 = i - la;
-            k2 = k + la;
-            i3 = i + la + .5;
-            k3 = k - la + .5; 
-            i4 = i - la + .5;
-            k4 = k + la + .5;
-        } if( plus == 2 ) {
-            i2 = i - la + 1;
-            k2 = k - la;
-            i1 = i + la + 1;
-            k1 = k + la;
-            i4 = i - la + .5;
-            k4 = k - la + .5; 
-            i3 = i + la + .5;
-            k3 = k + la + .5;
-        } if( plus == 3 ) {
-            i2 = i - la + 1 - .5;
-            k2 = k - la + .5;
-            i1 = i + la + 1 - .5;
-            k1 = k + la + .5;
-            i4 = i - la + .5 - .5;
-            k4 = k - la + .5 + .5; 
-            i3 = i + la + .5 - .5;
-            k3 = k + la + .5 + .5;
-        } if( plus == 4 ) {
-            i1 = i + la + .5;
-            k1 = k - la + .5;
+            i1 = i + la; k1 = k - la; i2 = i - la; k2 = k + la; i3 = i + la + .5; k3 = k - la + .5; i4 = i - la + .5; k4 = k + la + .5;
+        } else if( plus == 2 ) {
+            i2 = i - la + 1; k2 = k - la; i1 = i + la + 1; k1 = k + la; i4 = i - la + .5; k4 = k - la + .5; i3 = i + la + .5; k3 = k + la + .5;
+        } else if( plus == 3 ) {
+            i2 = i - la + 1 - .5; k2 = k - la + .5; i1 = i + la + 1 - .5; k1 = k + la + .5; i4 = i - la + .5 - .5; k4 = k - la + .5 + .5; i3 = i + la + .5 - .5; k3 = k + la + .5 + .5;
+        } else if( plus == 4 ) {
+            i1 = i + la + .5; k1 = k - la + .5; i2 = i - la + .5; k2 = k + la + .5; i3 = i + la + .5 + .5; k3 = k - la + .5 + .5; i4 = i - la + .5 + .5; k4 = k + la + .5 + .5;
+        } else if( plus == 5 ) {
+            i1 = i; k1 = k - la + .5; i2 = i; k2 = k + la + .5; i3 = i + .5; k3 = k - la + .5; i4 = i + .5; k4 = k + la + .5;
+        } else if( plus == 6 ) {
+            i1 = i + .5; k1 = k - la + .5; i2 = i + .5; k2 = k + la + .5; i3 = i + 1; k3 = k - la + .5; i4 = i + 1; k4 = k + la + .5;
+        } else if( plus == 7 ) {
             i2 = i - la + .5;
-            k2 = k + la + .5;
-            i3 = i + la + .5 + .5;
-            k3 = k - la + .5 + .5; 
-            i4 = i - la + .5 + .5;
-            k4 = k + la + .5 + .5;
+            k2 = k;
+            i1 = i + la + .5;
+            k1 = k;
+            i4 = i - la + .5; 
+            k4 = k + .5;
+            i3 = i + la + .5;
+            k3 = k + .5;
+        } else if( plus == 8 ) {
+            i2 = i - la + .5;
+            k2 = k + .5;
+            i1 = i + la + .5;
+            k1 = k + .5;
+            i4 = i - la + .5; 
+            k4 = k + 1;
+            i3 = i + la + .5;
+            k3 = k + 1;
         }
         
+        	float ft = ((float)c + 13) / 256F;
+        	float ft1 = ((float)c + 4) / 256F;
+	        float ft3 = ((float)d + 4 + th) / 256F;
+	        float ft2 = ((float)d + 6 + th) / 256F;
+        
             // dessus 1
-            tessellator.addVertexWithUV(i2, jh1, k2, ft, ft3);
-            tessellator.addVertexWithUV(i4, jh1, k4, ft, ft2);
-            tessellator.addVertexWithUV(i3, jh1, k3, ft1, ft2);
-            tessellator.addVertexWithUV(i1, jh1, k1, ft1, ft3);
+            tessellator.addVertexWithUV(i2, jh, k2, ft, ft3);
+            tessellator.addVertexWithUV(i4, jh, k4, ft1, ft3);
+            tessellator.addVertexWithUV(i3, jh, k3, ft1, ft2);
+            tessellator.addVertexWithUV(i1, jh, k1, ft, ft2);
 
             // dessous 1
-            tessellator.addVertexWithUV(i4, jb1, k4, ft, ft3);
-            tessellator.addVertexWithUV(i2, jb1, k2, ft, ft2);
-            tessellator.addVertexWithUV(i1, jb1, k1, ft1, ft2);
-            tessellator.addVertexWithUV(i3, jb1, k3, ft1, ft3);
+            tessellator.addVertexWithUV(i4, jb, k4, ft, ft3);
+            tessellator.addVertexWithUV(i2, jb, k2, ft1, ft3);
+            tessellator.addVertexWithUV(i1, jb, k1, ft1, ft2);
+            tessellator.addVertexWithUV(i3, jb, k3, ft, ft2);
+            
+            ft = ((float)c + 13 ) / 256F;
+            ft1 = ((float)c + 4) / 256F;
+            ft3 = ((float)d + 1 + th) / 256F;
+            ft2 = ((float)d + 4 + th) / 256F;
 
             // cote1 1
-            tessellator.addVertexWithUV(i1, jh1, k1, ft, ft2);
-            tessellator.addVertexWithUV(i3, jh1, k3, ft, ft3);
-            tessellator.addVertexWithUV(i3, jb1, k3, ft1, ft3);
-            tessellator.addVertexWithUV(i1, jb1, k1, ft1, ft2);
+            tessellator.addVertexWithUV(i1, jh, k1, ft1, ft3);
+            tessellator.addVertexWithUV(i3, jh, k3, ft, ft3);
+            tessellator.addVertexWithUV(i3, jb, k3, ft, ft2);
+            tessellator.addVertexWithUV(i1, jb, k1, ft1, ft2);
 
             // cote2 1
-            tessellator.addVertexWithUV(i4, jh1, k4, ft, ft3);
-            tessellator.addVertexWithUV(i2, jh1, k2, ft, ft2);
-            tessellator.addVertexWithUV(i2, jb1, k2, ft1, ft2);
-            tessellator.addVertexWithUV(i4, jb1, k4, ft1, ft3);
+            tessellator.addVertexWithUV(i4, jh, k4, ft, ft3);
+            tessellator.addVertexWithUV(i2, jh, k2, ft1, ft3);
+            tessellator.addVertexWithUV(i2, jb, k2, ft1, ft2);
+            tessellator.addVertexWithUV(i4, jb, k4, ft, ft2);
         
     }
 
